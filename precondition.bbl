@@ -1,0 +1,60 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Carlson \bgroup et al.\egroup
+  }2010]{carlson2010toward}
+Andrew Carlson, Justin Betteridge, Bryan Kisiel, Burr Settles, Estevam~R
+  Hruschka~Jr, and Tom~M Mitchell.
+\newblock 2010.
+\newblock Toward an architecture for never-ending language learning.
+\newblock In {\em AAAI}, volume~5, page~3.
+
+\bibitem[\protect\citename{Fader \bgroup et al.\egroup
+  }2011]{fader2011identifying}
+Anthony Fader, Stephen Soderland, and Oren Etzioni.
+\newblock 2011.
+\newblock Identifying relations for open information extraction.
+\newblock In {\em Proceedings of the Conference on Empirical Methods in Natural
+  Language Processing}, pages 1535--1545. Association for Computational
+  Linguistics.
+
+\bibitem[\protect\citename{Nakashole and Weikum}2012]{nakashole2012real}
+Ndapandula Nakashole and Gerhard Weikum.
+\newblock 2012.
+\newblock Real-time population of knowledge bases: opportunities and
+  challenges.
+\newblock In {\em Proceedings of the Joint Workshop on Automatic Knowledge Base
+  Construction and Web-scale Knowledge Extraction}, pages 41--45. Association
+  for Computational Linguistics.
+
+\bibitem[\protect\citename{Schank and Abelson}2013]{schank2013scripts}
+Roger~C Schank and Robert~P Abelson.
+\newblock 2013.
+\newblock {\em Scripts, plans, goals, and understanding: An inquiry into human
+  knowledge structures}.
+\newblock Psychology Press.
+
+\bibitem[\protect\citename{Suchanek \bgroup et al.\egroup
+  }2007]{suchanek2007yago}
+Fabian~M Suchanek, Gjergji Kasneci, and Gerhard Weikum.
+\newblock 2007.
+\newblock Yago: a core of semantic knowledge.
+\newblock In {\em Proceedings of the 16th international conference on World
+  Wide Web}, pages 697--706. ACM.
+
+\bibitem[\protect\citename{Wang \bgroup et al.\egroup }2010]{wang2010timely}
+Yafang Wang, Mingjie Zhu, Lizhen Qu, Marc Spaniol, and Gerhard Weikum.
+\newblock 2010.
+\newblock Timely yago: harvesting, querying, and visualizing temporal knowledge
+  from wikipedia.
+\newblock In {\em Proceedings of the 13th International Conference on Extending
+  Database Technology}, pages 697--700. ACM.
+
+\bibitem[\protect\citename{Wijaya \bgroup et al.\egroup }2014]{wijayactp}
+Derry Wijaya, Ndapa Nakashole, and Tom Mitchell.
+\newblock 2014.
+\newblock Ctps: Contextual temporal profiles for time scoping facts via entity
+  state change detection.
+\newblock In {\em Proceedings of the Conference on Empirical Methods in Natural
+  Language Processing}. Association for Computational Linguistics.
+
+\end{thebibliography}

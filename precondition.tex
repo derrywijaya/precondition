@@ -1,0 +1,86 @@
+%
+% File emnlp2015.tex
+%
+% Contact: daniele.pighin@gmail.com
+%%
+%% Based on the style files for ACL-2015, which were, in turn,
+%% Based on the style files for ACL-2014, which were, in turn,
+%% Based on the style files for ACL-2013, which were, in turn,
+%% Based on the style files for ACL-2012, which were, in turn,
+%% based on the style files for ACL-2011, which were, in turn, 
+%% based on the style files for ACL-2010, which were, in turn, 
+%% based on the style files for ACL-IJCNLP-2009, which were, in turn,
+%% based on the style files for EACL-2009 and IJCNLP-2008...
+
+%% Based on the style files for EACL 2006 by 
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith
+
+\documentclass[11pt,a4paper]{article}
+\renewcommand{\baselinestretch}{1.035}
+\usepackage{acl2015}
+\usepackage{times}
+\usepackage{url}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{epsfig,url,algorithm,algorithmic,multirow}
+\usepackage{amssymb}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{hypothesis}{Hypothesis}
+
+%\setlength\titlebox{5cm}
+
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+
+\title{``A Spouse Begins with a Deletion of \textit{engage} and Ends with \\an Addition of \textit{divorce}": \\Learning Verbs and State Changes for Knowledge Base Updates}
+
+\author{Derry Tanti Wijaya \\
+  Carnegie Mellon University \\
+  5000 Forbes Avenue \\
+  Pittsburgh, PA, 15213 \\
+  {\tt dwijaya@cs.cmu.edu} \\\And
+   Ndapandula Nakashole \\
+  Carnegie Mellon University \\
+  5000 Forbes Avenue \\
+  Pittsburgh, PA, 15213 \\
+  {\tt ndapa@cs.cmu.edu} \\\And
+  Tom M. Mitchell \\
+  Carnegie Mellon University \\
+  5000 Forbes Avenue \\
+  Pittsburgh, PA, 15213 \\
+  {\tt tom.mitchell@cs.cmu.edu} \\}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+%\vspace{-1cm} %ineffective here anyway
+
+\begin{abstract}
+Most knowledge bases (KBs) that have emerged in recent years are static. They contain facts about the world yet are seldom updated as the world changes. This paper proposes a method for learning state changes brought about by state-changing verbs on its arguments (i.e., entities). Entities' state change can be viewed as updates of KB facts pertaining to the entities. We propose to learn automatically state changes brought about by verbs on entities using Wikipedia edit histories of the entities. When a state-changing event happens to an entity, the Wikipedia infobox containing facts of the entity may be updated. At the same time, text containing verbs that express the event may also be added/deleted from the entity's Wikipedia page. In this paper we use edit histories as weakly supervised data for learning verbs that relate to infobox changes. We also leverage fact-specific constraints such as mutual exclusion and relatedness among infobox slots to effectively learn infobox changes that are brought about by the addition and/or deletion of verbs in the Wiki page. From our experiments, we observe that when state-changing verbs is being added/deleted to a person's Wikipedia text, we can update infobox facts about the person effectively (with an 89\% precision and 74\% recall). 
+
+\end{abstract}
+\input{sections/intro}
+\input{sections/method}
+\input{sections/experiments}
+\input{sections/related}
+\input{sections/conclusion}
+
+% include your own bib file like this:
+\bibliographystyle{acl}
+\bibliography{precondition}
+
+
+\end{document}
