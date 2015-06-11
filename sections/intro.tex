@@ -3,7 +3,7 @@
 \begin{figure*}[t]
 \begin{center}
 \includegraphics[width=14cm,keepaspectratio=true]{figures/motivation.pdf}
-\caption{\label{fig:motivation} A snapshot of Kim Kardashian's Wikipedia revision history, highlighting text and infobox changes. In red (and green) are the difference between the page on May 23 and May 24, 2014: things that are deleted from (and resp. added to) the page.}
+\caption{\label{fig:motivation} A snapshot of Kim Kardashian's Wikipedia revision history, highlighting text and infobox changes. In red (and green) are the difference between the page on 05/23/2014 and 05/24/2014: things that are deleted from (and resp. added to) the page.}
 \end{center}
 \end{figure*}
 
@@ -15,4 +15,4 @@ as a collection of verbs chained together by pre- and post-condition of their sh
 
 In this paper, we propose to learn state changes brought about by verbs using Wikipedia revision histories. Our assumption is that when a state-changing event happens to an entity e.g., a marriage, its Wikipedia infobox: a structured document that contains a set of facts (attribute-value pairs) of the entity is updated e.g., by the addition of a new \textsc{spouse} value. At the same time, texts that contain verbs that express the event e.g., \textit{wed} may be added to the entity's Wikipedia page (see an example in Figure \ref{fig:motivation}). Wikipedia revisions over many entities can act as distantly supervised data for mapping text and infobox changes that relate to events. However, Wikipedia revisions are \textit{noisy}: there is no guarantee that only the infobox slots related to a particular event will be updated. For example, when an event such as death happens, slots regarding birth e.g., \textit{birthdate}, \textit{birthplace}, may also be updated. To alleviate the effect of such, we leverage constraints between slots e.g., that \textit{deathdate} is mutually exclusive with \textit{birthdate} or that \textit{birthdate} is simultaneously updated with \textit{birthplace}, to effectively learn infobox changes that relate to a particular event-expressing verb. 
 
-Our contribution is the construction and use of an interesting, distantly labeled, dataset from Wikipedia revisions for learning about verb and state changes\footnote[1]{We make our dataset available here: http://.../wiki-edits-dataset.zip}, and the learned resource of verbs effective for identifying state changes.
+Our contribution is the construction and use of an interesting, distantly labeled, dataset from Wikipedia revisions for learning about verbs and state changes, and the learned resource of verbs effective for identifying state changes \footnote[1]{We make our dataset and verbs resource available here: http://.../verbs.html}.
