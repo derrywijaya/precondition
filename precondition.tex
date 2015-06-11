@@ -42,23 +42,24 @@
 % in the camera-ready version and ask you to change it back.
 
 
-\title{``A Spouse Begins with a Deletion of \textit{engage} and Ends with \\an Addition of \textit{divorce}": \\Learning Verbs and State Changes for Knowledge Base Updates}
+\title{``A Spouse Begins with a Deletion of \textit{engage} and Ends with \\an Addition of \textit{divorce}": \\Mapping Text and Infobox Changes in Wikipedia to \\Learn Verbs and State Changes for Knowledge Base Updates}
 
-\author{Derry Tanti Wijaya \\
-  Carnegie Mellon University \\
-  5000 Forbes Avenue \\
-  Pittsburgh, PA, 15213 \\
-  {\tt dwijaya@cs.cmu.edu} \\\And
-   Ndapandula Nakashole \\
-  Carnegie Mellon University \\
-  5000 Forbes Avenue \\
-  Pittsburgh, PA, 15213 \\
-  {\tt ndapa@cs.cmu.edu} \\\And
-  Tom M. Mitchell \\
-  Carnegie Mellon University \\
-  5000 Forbes Avenue \\
-  Pittsburgh, PA, 15213 \\
-  {\tt tom.mitchell@cs.cmu.edu} \\}
+\author{%Derry Tanti Wijaya \\
+  %Carnegie Mellon University \\
+  %5000 Forbes Avenue \\
+  %Pittsburgh, PA, 15213 \\
+  %{\tt dwijaya@cs.cmu.edu} \\\And
+   %Ndapandula Nakashole \\
+  %Carnegie Mellon University \\
+  %5000 Forbes Avenue \\
+  %Pittsburgh, PA, 15213 \\
+  %{\tt ndapa@cs.cmu.edu} \\\And
+  %Tom M. Mitchell \\
+  %Carnegie Mellon University \\
+  %5000 Forbes Avenue \\
+  %Pittsburgh, PA, 15213 \\
+  %{\tt tom.mitchell@cs.cmu.edu} \\
+  }
 
 \date{}
 
@@ -69,7 +70,8 @@
 %\vspace{-1cm} %ineffective here anyway
 
 \begin{abstract}
-Most knowledge bases (KBs) that have emerged in recent years are static. They contain facts about the world yet are seldom updated as the world changes. This paper proposes a method for learning state changes brought about by state-changing verbs on its arguments (i.e., entities). Entities' state change can be viewed as updates of KB facts pertaining to the entities. We propose to learn automatically state changes brought about by verbs on entities using Wikipedia edit histories of the entities. When a state-changing event happens to an entity, the Wikipedia infobox containing facts of the entity may be updated. At the same time, text containing verbs that express the event may also be added/deleted from the entity's Wikipedia page. In this paper we use edit histories as weakly supervised data for learning verbs that relate to infobox changes. We also leverage fact-specific constraints such as mutual exclusion and relatedness among infobox slots to effectively learn infobox changes that are brought about by the addition and/or deletion of verbs in the Wiki page. From our experiments, we observe that when state-changing verbs is being added/deleted to a person's Wikipedia text, we can update infobox facts about the person effectively (with an 89\% precision and 74\% recall). 
+Most knowledge bases (KBs) that have emerged in recent years are static. They contain facts about the world yet are seldom updated as the world changes. This paper proposes a method for learning state changes brought about by verbs on its arguments (i.e., entities). State changes are viewed as updates of KB facts pertaining to the entities. We propose to learn state changes brought about by verbs using Wikipedia revision histories. When a state-changing event happens to an entity, the Wikipedia infobox that contains facts of the entity may be updated. At the same time, text that contain verbs that express the event may also be added to or deleted from the entity's Wikipedia page. We use Wikipedia revision histories as distantly supervised data to automatically learn verbs and state changes. We also leverage %fact-specific 
+constraints such as mutual exclusion among infobox slots and simultaneously updated slots to effectively map text to infobox changes. We observe in our experiments that when state-changing verbs are being added to or deleted from a person's Wikipedia text, we can update infobox facts about the person effectively (with an 89\% precision and 74\% recall). 
 
 \end{abstract}
 \input{sections/intro}
