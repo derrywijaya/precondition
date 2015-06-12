@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  11 JUN 2015 20:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  12 JUN 2015 02:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -299,7 +299,7 @@ File: figures/motivation.pdf Graphic file (type pdf)
 
 <use figures/motivation.pdf>
 Package pdftex.def Info: figures/motivation.pdf used on input line 5.
-(pdftex.def)             Requested size: 426.79134pt x 150.41302pt.
+(pdftex.def)             Requested size: 455.24408pt x 160.43854pt.
  [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -308,51 +308,40 @@ Package pdftex.def Info: figures/motivation.pdf used on input line 5.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 
-Underfull \hbox (badness 1005) in paragraph at lines 13--16
-\OT1/ptm/m/n/10.95 con-sists of slot changes: $\OMS/cmsy/m/n/10.95 h[]$\OT1/ptm
-/m/n/10.95 , $\OT1/cmr/m/n/10.95 +$\OT1/ptm/m/n/10.95 ``Kanye
+Underfull \hbox (badness 1014) in paragraph at lines 13--16
+\OT1/ptm/m/n/10.95 is also a quadru-ple but has $\OML/cmm/m/it/10.95 s[]$\OT1/p
+tm/m/n/10.95 , $\OML/cmm/m/it/10.95 s[]$\OT1/ptm/m/n/10.95 , or
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 13--16
-\OT1/ptm/m/n/10.95 West", $\OT1/cmr/m/n/10.95 +$\OT1/ptm/m/n/10.95 ``2014", `` 
-"$\OMS/cmsy/m/n/10.95 i$\OT1/ptm/m/n/10.95 , $\OMS/cmsy/m/n/10.95 h[]$\OT1/ptm/
-m/n/10.95 , $\OMS/cmsy/m/n/10.95 ^^@$\OT1/ptm/m/n/10.95 ``Kanye
+Underfull \hbox (badness 1009) in paragraph at lines 13--16
+\OT1/ptm/m/n/10.95 they are added or deleted in $\OML/cmm/m/it/10.95 W[]$\OT1/p
+tm/m/n/10.95 . Sim-
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 13--16
+\OT1/ptm/m/n/10.95 i-larly, each text change $\OML/cmm/m/it/10.95 ^^Nc \OMS/cms
+y/m/n/10.95 2 \OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.95 C$ \OT1/ptm/m/n/10.95 i
+s pre-
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 13--16
+\OT1/ptm/m/n/10.95 fixed with $\OT1/cmr/m/n/10.95 +$ \OT1/ptm/m/n/10.95 or $\OM
+S/cmsy/m/n/10.95 ^^@$ \OT1/ptm/m/n/10.95 to in-di-cate whether they
  []
 
 [2 <./figures/motivation.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 24.
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 18.
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 18.
-
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 18.
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 18.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--19
-[]\OT1/ptm/m/n/10.95 We la-bel doc-u-ments that have
- []
-
-
-Underfull \hbox (badness 1629) in paragraph at lines 17--19
-\OT1/ptm/m/n/10.95 with the la-bel \OT1/ptm/m/it/10.95 begin-$\OML/cmm/m/it/10.
-95 s[]$ \OT1/ptm/m/n/10.95 and doc-u-ments that
- []
-
-
-Underfull \hbox (badness 1253) in paragraph at lines 17--19
-\OT1/ptm/m/n/10.95 have $\OMS/cmsy/m/n/10.95 h\OML/cmm/m/it/10.95 s[]; \OMS/cms
-y/m/n/10.95 ^^C\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 ^^C\OML/cmm/m/it/10.95
- ; \OT1/cmr/m/n/10.95 +\OML/cmm/m/it/10.95 s[]\OMS/cmsy/m/n/10.95 i$ $2 \OT1/cm
-r/m/n/10.95 ^^A\OML/cmm/m/it/10.95 S$ \OT1/ptm/m/n/10.95 with the la-bel
- []
-
-) (./sections/experiments.tex) (./sections/related.tex)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+)
+(./sections/experiments.tex) (./sections/related.tex)
 (./sections/conclusion.tex)
 Underfull \hbox (badness 1902) in paragraph at lines 5--84
 \OT1/ptm/m/n/10.95 sup-ported by DARPA un-der con-tract num-ber
@@ -363,30 +352,35 @@ Underfull \hbox (badness 2073) in paragraph at lines 5--10
 []\OT1/ptm/m/n/10 Andrew Carl-son, Justin Bet-teridge, Bryan Kisiel,
  []
 
-) [3] (./precondition.aux) ) 
+[3]) [4
+
+] (./precondition.aux) ) 
 Here is how much of TeX's memory you used:
- 2989 strings out of 493315
- 40045 string characters out of 6137904
- 106093 words of memory out of 5000000
- 6326 multiletter control sequences out of 15000+600000
- 34489 words of font info for 81 fonts, out of 8000000 for 9000
+ 3017 strings out of 493315
+ 40489 string characters out of 6137904
+ 106111 words of memory out of 5000000
+ 6349 multiletter control sequences out of 15000+600000
+ 38895 words of font info for 87 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,10n,26p,1349b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips
-/base/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
-fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/te
-xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on precondition.pdf (3 pages, 360274 bytes).
+ 37i,10n,26p,1451b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/bas
+e/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cme
+x10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/urw/times/utmri8a.pfb>
+Output written on precondition.pdf (4 pages, 389924 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 140 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
