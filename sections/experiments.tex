@@ -1,2 +1,66 @@
 \section{Experiments}
 
+We use 90\% of our labeled documents as train and test on the remaining 10\%. Since our data is noisy, we manually go through our test data to discard documents that have incorrect label to the change in its text. The task is to predict for each document, the label of the document given its verbs features. We compute precision, recall, and F1 values of our predictions of the test set and compare the values before and after feature selection (Table \ref{table:performance}).
+
+\begin{table}
+\begin{small}
+\begin{center}
+\begin{tabular}{|l|r|r|r|}
+\hline
+Method & Precision & Recall & F1 \\
+\hline
+\textsc{MaxEnt} & 0.82 & 0.79 & 0.80 \\
+\hline
+\textsc{MaxEnt} + MIP & 0.88 & 0.76 & 0.82 \\
+\hline
+\end{tabular}
+\caption{\label{table:performance} Results of predicting state change label using verb features.}
+\end{center}
+\end{small}
+\end{table}
+
+We can see the value of doing feature selection by employing constraints and MIP solver in Table \ref{table:performance}. Doing feature selection improves precision of the prediction without reducing too much recall; thus resulting in a better F1. Some of inconsistent verb features for a label were removed by employing constraints. For example, 
+
+We show some of the learned verb features (after feature selection) for some state change labels in (Table \ref{table:verbs}).
+\begin{table}
+\begin{scriptsize}
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Label & Verb \\
+\hline
+\textit{begin-deathdate} &+(arg1) die on (arg2), +(arg1) die (arg2), \\
+& +(arg1) pass on (arg2) \\
+\hline
+\textit{begin-deathplace} &+(arg1) die in (arg2), \\
+&+(arg1) die at (arg2), +(arg1) move to (arg2) \\
+\hline
+\textit{begin-birthplace} &+(arg1) be born in (arg2), \\
+& +(arg1) bear in (arg2), +(arg1) be born at (arg2) \\
+\hline
+\textit{begin-occupation} &+(arg1) work as (arg2), \\
+& +(arg1) nominate for (arg2), +(arg1) establish as (arg2) \\
+\hline
+\textit{begin-termend} &+(arg1) resign on (arg2), \\
+& +(arg1) step down in (arg2), +(arg1) flee in (arg2) \\
+\hline
+\textit{begin-office} &+(arg1) be appointed as (arg2), \\
+& +(arg1) serve as (arg2), +(arg1) be appointed (arg2) \\
+\hline
+\textit{end-spouse} &+(arg1) file \textbf{for divorce} in (arg2), \\
+& +(arg1) die on (arg2), +(arg1) divorce in (arg2) \\
+& +(arg1) announce \textbf{separation} on (arg2) \\
+\hline
+\textit{begin-party} &+(arg1) launch (arg2), \\
+& +(arg1) be elected as (arg2), +(arg1) be elected (arg2) \\
+\hline
+\textit{begin-almamater} &+(arg1) graduate from (arg2), \\
+& +(arg1) attend (arg2), +(arg1) be educated at (arg2) \\
+\hline
+
+\end{tabular}
+\caption{\label{table:verbs} Comparison of learned verbs before and after feature selection. The texts in bold are (preposition+) noun that co-occur most frequently with the combination of the verb and the label in the train data.}
+\end{center}
+\end{scriptsize}
+\end{table}
+\normalsize
