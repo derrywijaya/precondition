@@ -70,8 +70,10 @@
 %\vspace{-1cm} %ineffective here anyway
 
 \begin{abstract}
-Most knowledge bases (KBs) that have emerged in recent years are static. They contain facts about the world yet are seldom updated as the world changes. This paper proposes a method for learning state changes brought about by verbs on its arguments (i.e., entities). State changes are viewed as updates of KB facts pertaining to the entities. We propose to learn state changes brought about by verbs using Wikipedia revision histories. When a state-changing event happens to an entity, the Wikipedia infobox that contains facts of the entity may be updated. At the same time, text that contain verbs that express the event may also be added to or deleted from the entity's Wikipedia page. We use Wikipedia revision histories as distantly supervised data to automatically learn verbs and state changes. We also leverage %fact-specific 
-constraints such as mutual exclusion among infobox slots and simultaneously updated slots to effectively map text to infobox changes. We observe in our experiments that when state-changing verbs are being added to or deleted from a person's Wikipedia text, we can update infobox facts about the person effectively (with an 89\% precision and 74\% recall). 
+Most knowledge bases (KBs) %that have emerged 
+in recent years are static. They contain facts about the world yet are seldom updated as the world changes. This paper proposes a method for learning state changes brought about by verbs on its arguments (i.e., entities). State changes are viewed as updates of KB facts pertaining to the entities. We propose to learn state changes brought about by verbs using Wikipedia revision histories. When a state-changing event happens to an entity, the Wikipedia infobox that contains facts of the entity may be updated. At the same time, text that contain verbs that express the event may also be added to/deleted from the entity's Wikipedia page. We use Wikipedia revisions %histories 
+as distantly supervised data to automatically learn verbs and state changes. We also use %fact-specific 
+constraints such as mutual exclusion among infobox slots and simultaneously updated slots to effectively map text to infobox changes. We observe in our experiments that when state-changing verbs are being added to/deleted from a person's Wikipedia text, we can update infobox facts about the person effectively (with an 89\% precision and 74\% recall). 
 
 \end{abstract}
 \input{sections/intro}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  11 JUN 2015 12:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  11 JUN 2015 20:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -307,10 +307,54 @@ Package pdftex.def Info: figures/motivation.pdf used on input line 5.
 ]) (./sections/method.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
- [2 <./figures/motivation.pdf>]) (./sections/experiments.tex) (./sections/relat
-ed.tex)
+
+Underfull \hbox (badness 1005) in paragraph at lines 13--16
+\OT1/ptm/m/n/10.95 con-sists of slot changes: $\OMS/cmsy/m/n/10.95 h[]$\OT1/ptm
+/m/n/10.95 , $\OT1/cmr/m/n/10.95 +$\OT1/ptm/m/n/10.95 ``Kanye
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 13--16
+\OT1/ptm/m/n/10.95 West", $\OT1/cmr/m/n/10.95 +$\OT1/ptm/m/n/10.95 ``2014", `` 
+"$\OMS/cmsy/m/n/10.95 i$\OT1/ptm/m/n/10.95 , $\OMS/cmsy/m/n/10.95 h[]$\OT1/ptm/
+m/n/10.95 , $\OMS/cmsy/m/n/10.95 ^^@$\OT1/ptm/m/n/10.95 ``Kanye
+ []
+
+[2 <./figures/motivation.pdf>]
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 18.
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 18.
+
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 18.
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 18.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
+[]\OT1/ptm/m/n/10.95 We la-bel doc-u-ments that have
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 17--19
+\OT1/ptm/m/n/10.95 with the la-bel \OT1/ptm/m/it/10.95 begin-$\OML/cmm/m/it/10.
+95 s[]$ \OT1/ptm/m/n/10.95 and doc-u-ments that
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 17--19
+\OT1/ptm/m/n/10.95 have $\OMS/cmsy/m/n/10.95 h\OML/cmm/m/it/10.95 s[]; \OMS/cms
+y/m/n/10.95 ^^C\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 ^^C\OML/cmm/m/it/10.95
+ ; \OT1/cmr/m/n/10.95 +\OML/cmm/m/it/10.95 s[]\OMS/cmsy/m/n/10.95 i$ $2 \OT1/cm
+r/m/n/10.95 ^^A\OML/cmm/m/it/10.95 S$ \OT1/ptm/m/n/10.95 with the la-bel
+ []
+
+) (./sections/experiments.tex) (./sections/related.tex)
 (./sections/conclusion.tex)
-Underfull \hbox (badness 1902) in paragraph at lines 5--82
+Underfull \hbox (badness 1902) in paragraph at lines 5--84
 \OT1/ptm/m/n/10.95 sup-ported by DARPA un-der con-tract num-ber
  []
 
@@ -321,11 +365,11 @@ Underfull \hbox (badness 2073) in paragraph at lines 5--10
 
 ) [3] (./precondition.aux) ) 
 Here is how much of TeX's memory you used:
- 2987 strings out of 493315
- 40017 string characters out of 6137904
+ 2989 strings out of 493315
+ 40045 string characters out of 6137904
  106093 words of memory out of 5000000
- 6324 multiletter control sequences out of 15000+600000
- 33197 words of font info for 79 fonts, out of 8000000 for 9000
+ 6326 multiletter control sequences out of 15000+600000
+ 34489 words of font info for 81 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,10n,26p,1349b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips
@@ -339,7 +383,7 @@ b></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
 cal/texlive/2013/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on precondition.pdf (3 pages, 360023 bytes).
+Output written on precondition.pdf (3 pages, 360274 bytes).
 PDF statistics:
  125 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
