@@ -1,3 +1,25 @@
-\section{Related Works}
+\section{Related Work}
 
-Related works here
+\textbf{Learning from Wikipedia Edit History.}
+Wikipedia edit history has been exploited in a number
+of language understanding problems.
+However, prior methods were targeted for various tasks different form ours.
+  A popular task in this regard is that of
+Wikipedia edit history categorization\cite{daxenberger2013automatically}.  This task
+involves characterizing  a given change instance as one of many possible categories such as
+such as spelling error correction, paraphrase or vandalism to edits in a document. 
+\cite{DaxenbergerG12}  came up with a 21 category edit classification
+taxonomy.  Other tasks to leverage Wikipedia edit history include:
+ spelling error correction, summarization, preposition error
+ correction, sentence compression, bias detection, and
+ textual  entailment \cite{Nelken08miningwikipedia,Cahill13robustsystems,Zanzotto_expandingtextual,RecasensDJ13}.
+These studies are concerned with coarse grained change type classification as opposed
+to the establishing a specific correspondence between text changes, at a word level,  to  infobox changes.
+
+\textbf{Learning State Changing Verbs.}
+Very few works have studied the problem of detecting state changing verbs.
+\cite{HosseiniHEK14} learned state changing verbs in the context of solving arithmetic word problems.
+The learned the effect of the words such as add, subtract on the the current state. 
+The VerbOcean resource was automatically generated from the Web\cite{Chklovski04}. The authors  studied the problem of fine-grained semantic relationships between verbs from Web document. They learn relations such as  if someone has bought an item, they may sell it at a later time. This then involves capturing empirical regularities  if ``X buys Y'' happens before ``X
+sells Y'', for the same X and Y values in a given context. Unlike the work we present here, the methods of \cite{Chklovski04,HosseiniHEK14}  do not make a connection to knowledge base relations such as Wikipedia infoboxes.
+In a vision paper, \cite{Wijaya2014akbc} give high level descriptions of  a number of possible methods for learning state changing methods but did not implement any of them.

@@ -1,5 +1,15 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citename{Cahill \bgroup et al.\egroup
+  }2013]{Cahill13robustsystems}
+Aoife Cahill, Nitin Madnani, Joel Tetreault, and Diane Napolitano.
+\newblock 2013.
+\newblock Robust systems for preposition error correction using wikipedia
+  revisions.
+\newblock In {\em In Proceedings of the Conference of the North American
+  Chapter of the Association for Computational Linguistics: Human Language
+  Technologies}.
+
 \bibitem[\protect\citename{Carlson \bgroup et al.\egroup
   }2010]{carlson2010toward}
 Andrew Carlson, Justin Betteridge, Bryan Kisiel, Burr Settles, Estevam~R
@@ -7,6 +17,28 @@ Andrew Carlson, Justin Betteridge, Bryan Kisiel, Burr Settles, Estevam~R
 \newblock 2010.
 \newblock Toward an architecture for never-ending language learning.
 \newblock In {\em AAAI}, volume~5, page~3.
+
+\bibitem[\protect\citename{Chklovski and Pantel}2004]{Chklovski04}
+Timothy Chklovski and Patrick Pantel.
+\newblock 2004.
+\newblock Verbocean: Mining the web for fine-grained semantic verb relations.
+\newblock In {\em Proceedings of EMNLP 2004}, pages 33--40.
+
+\bibitem[\protect\citename{Daxenberger and Gurevych}2012]{DaxenbergerG12}
+Johannes Daxenberger and Iryna Gurevych.
+\newblock 2012.
+\newblock A corpus-based study of edit categories in featured and non-featured
+  wikipedia articles.
+\newblock In {\em {COLING} 2012, 24th International Conference on Computational
+  Linguistics, Proceedings of the Conference: Technical Papers, 8-15 December
+  2012, Mumbai, India}, pages 711--726.
+
+\bibitem[\protect\citename{Daxenberger and
+  Gurevych}2013]{daxenberger2013automatically}
+Johannes Daxenberger and Iryna Gurevych.
+\newblock 2013.
+\newblock Automatically classifying edit categories in wikipedia revisions.
+\newblock In {\em EMNLP}, pages 578--589.
 
 \bibitem[\protect\citename{Fader \bgroup et al.\egroup
   }2011]{fader2011identifying}
@@ -17,6 +49,12 @@ Anthony Fader, Stephen Soderland, and Oren Etzioni.
   Language Processing}, pages 1535--1545. Association for Computational
   Linguistics.
 
+\bibitem[\protect\citename{Hosseini \bgroup et al.\egroup }2014]{HosseiniHEK14}
+Mohammad~Javad Hosseini, Hannaneh Hajishirzi, Oren Etzioni, and Nate Kushman.
+\newblock 2014.
+\newblock Learning to solve arithmetic word problems with verb categorization.
+\newblock In {\em EMNLP}, pages 523--533. ACL.
+
 \bibitem[\protect\citename{Nakashole and Weikum}2012]{nakashole2012real}
 Ndapandula Nakashole and Gerhard Weikum.
 \newblock 2012.
@@ -26,12 +64,17 @@ Ndapandula Nakashole and Gerhard Weikum.
   Construction and Web-scale Knowledge Extraction}, pages 41--45. Association
   for Computational Linguistics.
 
-\bibitem[\protect\citename{Schank and Abelson}2013]{schank2013scripts}
-Roger~C Schank and Robert~P Abelson.
+\bibitem[\protect\citename{Nelken and Yamangil}2008]{Nelken08miningwikipedia}
+Rani Nelken and Elif Yamangil.
+\newblock 2008.
+\newblock Mining wikipedia’s article revision history for training
+  computational linguistics algorithms.
+
+\bibitem[\protect\citename{Recasens \bgroup et al.\egroup }2013]{RecasensDJ13}
+Marta Recasens, Cristian Danescu-Niculescu-Mizil, and Dan Jurafsky.
 \newblock 2013.
-\newblock {\em Scripts, plans, goals, and understanding: An inquiry into human
-  knowledge structures}.
-\newblock Psychology Press.
+\newblock Linguistic models for analyzing and detecting biased language.
+\newblock In {\em ACL (1)}, pages 1650--1659.
 
 \bibitem[\protect\citename{Suchanek \bgroup et al.\egroup
   }2007]{suchanek2007yago}
@@ -41,20 +84,26 @@ Fabian~M Suchanek, Gjergji Kasneci, and Gerhard Weikum.
 \newblock In {\em Proceedings of the 16th international conference on World
   Wide Web}, pages 697--706. ACM.
 
-\bibitem[\protect\citename{Wang \bgroup et al.\egroup }2010]{wang2010timely}
-Yafang Wang, Mingjie Zhu, Lizhen Qu, Marc Spaniol, and Gerhard Weikum.
-\newblock 2010.
-\newblock Timely yago: harvesting, querying, and visualizing temporal knowledge
-  from wikipedia.
-\newblock In {\em Proceedings of the 13th International Conference on Extending
-  Database Technology}, pages 697--700. ACM.
-
-\bibitem[\protect\citename{Wijaya \bgroup et al.\egroup }2014]{wijayactp}
+\bibitem[\protect\citename{Wijaya \bgroup et al.\egroup }2014a]{wijayactp}
 Derry Wijaya, Ndapa Nakashole, and Tom Mitchell.
-\newblock 2014.
+\newblock 2014a.
 \newblock Ctps: Contextual temporal profiles for time scoping facts via entity
   state change detection.
 \newblock In {\em Proceedings of the Conference on Empirical Methods in Natural
   Language Processing}. Association for Computational Linguistics.
+
+\bibitem[\protect\citename{Wijaya \bgroup et al.\egroup }2014b]{Wijaya2014akbc}
+Derry~Tanti Wijaya, Ndapandula Nakashole, and Tom~M Mitchell.
+\newblock 2014b.
+\newblock Mining and organizing a resource of state-changing verbs.
+\newblock In {\em Proceedings of the Joint Workshop on Automatic Knowledge Base
+  Construction and Web-scale Knowledge Extraction}.
+
+\bibitem[\protect\citename{Zanzotto and
+  Pennacchiotti}2010]{Zanzotto_expandingtextual}
+Fabio~Massimo Zanzotto and Marco Pennacchiotti.
+\newblock 2010.
+\newblock Expanding textual entailment corpora from wikipedia using
+  co-training.
 
 \end{thebibliography}
