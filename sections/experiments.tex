@@ -19,9 +19,7 @@ Method & Precision & Recall & F1 \\
 \end{small}
 \end{table}
 
-We can see the value of doing feature selection by employing constraints and MIP solver in Table \ref{table:performance}. Doing feature selection improves precision of the prediction without reducing too much recall; thus resulting in a better F1. Some of inconsistent verb features for a label were removed by employing constraints. For example, 
-
-We show some of the learned verb features (after feature selection) for some state change labels in (Table \ref{table:verbs}).
+We observe the value of doing feature selection by asserting constraints in an MIP formulation in Table \ref{table:performance}. Feature selection improves precision without reducing too much recall; thus resulting in a better F1. Some inconsistent verb features for the labels were removed by asserting constraints. For example, before feature selection, the verbs: ``marry", ``marry in" and ``be married to" were high-weighted features for both \textit{begin-spouse} and \textit{end-spouse}. After asserting constraints that \textit{begin-spouse} is mutex with \textit{end-spouse}, these verbs (whose base form is ``marry") are filtered out from the features of \textit{end-spouse}. We show some of the learned verb features (after feature selection) for some state change labels in (Table \ref{table:verbs}).
 \begin{table}
 \begin{scriptsize}
 \begin{center}
@@ -29,37 +27,59 @@ We show some of the learned verb features (after feature selection) for some sta
 \hline
 Label & Verb \\
 \hline
-\textit{begin-deathdate} &+(arg1) die on (arg2), +(arg1) die (arg2), \\
-& +(arg1) pass on (arg2) \\
+\textit{begin-deathdate} &+(arg1) die on (arg2), +(arg1) die (arg2), +(arg1) pass on (arg2) \\
 \hline
-\textit{begin-deathplace} &+(arg1) die in (arg2), \\
-&+(arg1) die at (arg2), +(arg1) move to (arg2) \\
+\textit{begin-deathplace} &+(arg1) die in (arg2), +(arg1) die at (arg2), +(arg1) move to (arg2) \\
 \hline
-\textit{begin-birthplace} &+(arg1) be born in (arg2), \\
-& +(arg1) bear in (arg2), +(arg1) be born at (arg2) \\
+\textit{begin-birthplace} &+(arg1) be born in (arg2), +(arg1) bear in (arg2), \\
+&+(arg1) be born at (arg2) \\
 \hline
-\textit{begin-occupation} &+(arg1) work as (arg2), \\
-& +(arg1) nominate for (arg2), +(arg1) establish as (arg2) \\
+\textit{begin-} &+(arg1) succeed (arg2), +(arg1) replace (arg2), \\
+\textit{predecessor}& +(arg1) join cabinet as (arg2), +(arg1) join as (arg2) \\
 \hline
-\textit{begin-termend} &+(arg1) resign on (arg2), \\
-& +(arg1) step down in (arg2), +(arg1) flee in (arg2) \\
+\textit{begin-successor} &+(arg1) lose \textbf{seat} to (arg2), +(arg1) resign on (arg2), \\
+& +(arg1) resign from post on (arg2), +(arg1) lose election to (arg2) \\
+\hline
+\textit{begin-} &+(arg1) work as (arg2), +(arg1) nominate for (arg2), \\
+\textit{occupation}& +(arg1) establish as (arg2) \\
+\hline
+\textit{begin-termstart} &+(arg1) be appointed on (arg2), +(arg1) serve from (arg2), \\
+& +(arg1) be elected on (arg2) \\
+\hline
+\textit{begin-termend} &+(arg1) resign on (arg2), +(arg1) step down in (arg2), \\
+& +(arg1) flee in (arg2) \\
 \hline
 \textit{begin-office} &+(arg1) be appointed as (arg2), \\
 & +(arg1) serve as (arg2), +(arg1) be appointed (arg2) \\
 \hline
-\textit{end-spouse} &+(arg1) file \textbf{for divorce} in (arg2), \\
-& +(arg1) die on (arg2), +(arg1) divorce in (arg2) \\
-& +(arg1) announce \textbf{separation} on (arg2) \\
+\textit{begin-spouse} &+(arg1) marry on (arg2), +(arg1) marry (arg2), \\
+& +(arg1) be married on (arg2), -(arg1) be engaged to (arg2) \\
 \hline
-\textit{begin-party} &+(arg1) launch (arg2), \\
-& +(arg1) be elected as (arg2), +(arg1) be elected (arg2) \\
+\textit{end-spouse} &+(arg1) file \textbf{for divorce} in (arg2), +(arg1) die on (arg2), \\
+& +(arg1) divorce in (arg2), +(arg1) announce \textbf{separation} on (arg2) \\
 \hline
-\textit{begin-almamater} &+(arg1) graduate from (arg2), \\
-& +(arg1) attend (arg2), +(arg1) be educated at (arg2) \\
+\textit{begin-children} &+(arg1) have \textbf{child} (arg2), +(arg1) raise daughter (arg2), \\
+& +(arg1) raise (arg2) \\
 \hline
-
+%\textit{begin-party} &+(arg1) launch (arg2), +(arg1) be elected as (arg2), +(arg1) be elected (arg2) \\
+%\hline
+\textit{begin-} &+(arg1) graduate from (arg2), +(arg1) attend (arg2), \\
+\textit{almamater}& +(arg1) be educated at (arg2) \\
+\hline
+\textit{begin-awards} &+(arg1) be awarded (arg2), +(arg1) be named on (arg2), \\
+& +(arg1) receive (arg2) \\
+\hline
+\textit{begin-} &+(arg1) start career with (arg2), +(arg1) begin \textbf{career} with (arg2),\\
+\textit{youthclubs}& +(arg1) start with (arg2), +(arg1) play for (arg2) \\
+\hline
+\textit{begin-clubs} &+(arg1) play for (arg2), +(arg1) play during career with (arg2),\\
+& +(arg1) sign with (arg2), +(arg1) complete \textbf{move} to (arg2) \\
+\hline
+\textit{begin-} &+(arg1) make \textbf{appearance} for (arg2), \\
+\textit{nationalteam}& +(arg1) make debut for (arg2), +(arg1) play for (arg2) \\
+\hline
 \end{tabular}
-\caption{\label{table:verbs} Comparison of learned verbs before and after feature selection. The texts in bold are (preposition+) noun that co-occur most frequently with the combination of the verb and the label in the train data.}
+\caption{\label{table:verbs} Comparison of verb features before and after feature selection. The texts in bold are (prep+) noun that occur most frequently with the combination of the (verb, label) in the train data.}
 \end{center}
 \end{scriptsize}
 \end{table}

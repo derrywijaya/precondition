@@ -22,11 +22,11 @@ For each $d_{p, t_p}$, we use $\Delta S_{p, t_p}$ to label the document and $\De
 We use a Maximum Entropy (\textsc{MaxEnt}) classifier given the set of training data = \{(\textbf{v}$_{d_{\ell}}$, y)\} where \textbf{v}$_{d_{\ell}} =$ ($v_1$, $v_2$, ... $v_{|V|}$) $\in R^{|V|}$ is the $|V|$-dimensional representation of a labeled document $d_{\ell}$ where $V$ is the set of all verbs in our training data, and $y$ is the label of $d_{\ell}$ as defined in \ref{sec:data}.
 
 These training documents are used to estimate a set of weight vectors \textbf{w} = \{\textbf{w}$_1$, \textbf{w}$_2$, ... \textbf{w}$_{|Y|}$\}, one for each label $y \in Y$, the set of all labels in our training data. The classifier can then be applied to classify an unlabeled document $d_{\textit{u}}$ using: 
-
+\scriptsize
  \begin{equation}
 	p(y|\textbf{v}_{d_{\textit{u}}}) = \frac{\mathrm{exp}  (\textbf{w}_{y} \cdot \textbf{v}_{d_{\textit{u}}})}{\sum_{y'} \mathrm{exp} (\textbf{w}_{y'} \cdot \textbf{v}_{d_{\textit{u}}})} \label{eqn:maxent}
 \end{equation}
-
+\normalsize
 \subsection{Feature Selection using Constraints}
 
 While feature weights obtained by \textsc{MaxEnt} allow us to identify verbs that are good features for predicting a particular state change label, our distantly supervised training data is inherently noisy. %There is no guarantee that at any revision, the changed slots are related to the event being expressed in text. 
