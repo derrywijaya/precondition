@@ -55,6 +55,20 @@ Mohammad~Javad Hosseini, Hannaneh Hajishirzi, Oren Etzioni, and Nate Kushman.
 \newblock Learning to solve arithmetic word problems with verb categorization.
 \newblock In {\em EMNLP}, pages 523--533. ACL.
 
+\bibitem[\protect\citename{Mitchell \bgroup et al.\egroup
+  }2015]{MitchellCHTBCMG15}
+Tom~M. Mitchell, William~W. Cohen, Estevam R.~Hruschka Jr., Partha~Pratim
+  Talukdar, Justin Betteridge, Andrew Carlson, Bhavana~Dalvi Mishra, Matthew
+  Gardner, Bryan Kisiel, Jayant Krishnamurthy, Ni~Lao, Kathryn Mazaitis, Thahir
+  Mohamed, Ndapandula Nakashole, Emmanouil~Antonios Platanios, Alan Ritter,
+  Mehdi Samadi, Burr Settles, Richard~C. Wang, Derry~Tanti Wijaya, Abhinav
+  Gupta, Xinlei Chen, Abulhair Saparov, Malcolm Greaves, and Joel Welling.
+\newblock 2015.
+\newblock Never-ending learning.
+\newblock In {\em Proceedings of the Twenty-Ninth {AAAI} Conference on
+  Artificial Intelligence, January 25-30, 2015, Austin, Texas, {USA.}}, pages
+  2302--2310.
+
 \bibitem[\protect\citename{Nakashole and Weikum}2012]{nakashole2012real}
 Ndapandula Nakashole and Gerhard Weikum.
 \newblock 2012.
