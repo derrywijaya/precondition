@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  12 JUN 2015 18:45
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  12 JUN 2015 18:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -318,26 +318,26 @@ updmap/pdftex.map}
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 
-Underfull \hbox (badness 4792) in paragraph at lines 15--16
+Underfull \hbox (badness 4792) in paragraph at lines 16--17
 []\OT1/ptm/m/n/10.95 For each $\OML/cmm/m/it/10.95 d[]$\OT1/ptm/m/n/10.95 , we 
 use $\OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.95 S[]$ \OT1/ptm/m/n/10.95 to la-be
 l
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
 \OT1/ptm/m/n/10.95 the doc-u-ment and $\OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.9
 5 C[]$ \OT1/ptm/m/n/10.95 to ex-tract fea-
  []
 
 
-Underfull \hbox (badness 6461) in paragraph at lines 15--16
+Underfull \hbox (badness 6461) in paragraph at lines 16--17
 \OT1/ptm/m/n/10.95 tures for the doc-u-ment. We la-bel $\OML/cmm/m/it/10.95 d[]
 $
  []
 
 
-Underfull \hbox (badness 3701) in paragraph at lines 15--16
+Underfull \hbox (badness 3701) in paragraph at lines 16--17
 \OT1/ptm/m/n/10.95 that has $\OMS/cmsy/m/n/10.95 h\OML/cmm/m/it/10.95 s[]; \OT1
 /cmr/m/n/10.95 +\OML/cmm/m/it/10.95 ^^Ns[]; \OMS/cmsy/m/n/10.95 ^^C\OML/cmm/m/i
 t/10.95 ; \OMS/cmsy/m/n/10.95 ^^Ci 2 \OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.95 
@@ -345,7 +345,7 @@ S[]$ \OT1/ptm/m/n/10.95 or
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 15--16
+Underfull \hbox (badness 1715) in paragraph at lines 16--17
 \OMS/cmsy/m/n/10.95 h\OML/cmm/m/it/10.95 s[]; \OMS/cmsy/m/n/10.95 ^^C\OML/cmm/m
 /it/10.95 ; \OT1/cmr/m/n/10.95 +\OML/cmm/m/it/10.95 ^^Ns[]; \OMS/cmsy/m/n/10.95
  ^^Ci$ $2 \OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.95 S[]$ \OT1/ptm/m/n/10.95 wit
@@ -353,74 +353,71 @@ h the la-bel
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 15--16
+Underfull \hbox (badness 1521) in paragraph at lines 16--17
 \OT1/ptm/m/n/10.95 For ex-am-ple, in Fig-ure 1[], $\OML/cmm/m/it/10.95 d[]$ \OT
 1/ptm/m/n/10.95 is
  []
 
 [2 <./figures/motivation.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 22.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 23.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
 
-Underfull \hbox (badness 5711) in paragraph at lines 42--43
+Underfull \hbox (badness 5711) in paragraph at lines 43--44
 []\OT1/ptm/m/n/10.95 We ob-tain la-bel mem-ber-ship prob-a-bil-i-ties
  []
 
 
-Overfull \hbox (50.43816pt too wide) detected at line 56
+Overfull \hbox (50.43816pt too wide) detected at line 57
 [] []
  []
 
-) (./sections/experiments.tex
+) (./sections/experiments.tex [3]
 Overfull \hbox (38.07509pt too wide) in paragraph at lines 26--82
  [] 
  []
 
-) (./sections/related.tex [3]
-Underfull \hbox (badness 10000) in paragraph at lines 3--18
+) (./sections/related.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--16
 \OT1/ptm/b/n/10.95 Learning from Wikipedia Edit His-tory.
  []
 
 
-Underfull \hbox (badness 3029) in paragraph at lines 3--18
+Underfull \hbox (badness 3029) in paragraph at lines 3--16
 \OT1/ptm/m/n/10.95 num-ber of lan-guage un-der-stand-ing prob-lems.
  []
 
 
-Underfull \hbox (badness 2050) in paragraph at lines 3--18
-\OT1/ptm/m/n/10.95 this re-gard is that of Wikipedia edit his-tory
+Underfull \hbox (badness 5050) in paragraph at lines 3--16
+\OT1/ptm/m/n/10.95 Prior meth-ods tar-get var-i-ous tasks dif-fer-ent
  []
 
 
-Underfull \hbox (badness 1762) in paragraph at lines 3--18
-\OT1/ptm/m/n/10.95 edit clas-si-fi-ca-tion tax-on-omy. Other tasks to
+Underfull \hbox (badness 2875) in paragraph at lines 3--16
+\OT1/ptm/m/n/10.95 from ours. A pop-u-lar task in this re-gard
  []
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 3--18
-\OT1/ptm/m/n/10.95 and tex-tual en-tail-ment (Nelken and Ya-mangil,
+Underfull \hbox (badness 2626) in paragraph at lines 3--16
+\OT1/ptm/m/n/10.95 is that of Wikipedia edit his-tory cat-e-go-riza-
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 3--16
+\OT1/ptm/m/n/10.95 tual en-tail-ment (Nelken and Ya-mangil, 2008;
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-(./sections/conclusion.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4])
-Underfull \hbox (badness 1902) in paragraph at lines 5--98
-\OT1/ptm/m/n/10.95 sup-ported by DARPA un-der con-tract num-ber
- []
-
-(./precondition.bbl
+(./sections/conclusion.tex [4]) (./precondition.bbl
 Underfull \hbox (badness 2073) in paragraph at lines 15--20
 []\OT1/ptm/m/n/10 Andrew Carl-son, Justin Bet-teridge, Bryan Kisiel,
  []
@@ -452,7 +449,7 @@ Underfull \hbox (badness 2617) in paragraph at lines 110--115
 Here is how much of TeX's memory you used:
  3040 strings out of 493488
  40766 string characters out of 3141326
- 115679 words of memory out of 3000000
+ 108679 words of memory out of 3000000
  6221 multiletter control sequences out of 15000+200000
  47909 words of font info for 101 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -478,7 +475,7 @@ xlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012
 /texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on precondition.pdf (5 pages, 465985 bytes).
+Output written on precondition.pdf (5 pages, 465712 bytes).
 PDF statistics:
  172 PDF objects out of 1000 (max. 8388607)
  116 compressed objects within 2 object streams
