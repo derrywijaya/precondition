@@ -43,7 +43,7 @@
 
 
 \title{``A Spousal Relation Begins with a Deletion of \textit{engage} \\and Ends with an Addition of \textit{divorce}": \\
-Learning State Changing Verbs from Wikipedia Revision History}
+Learning State Changing Verbs from Wikipedia Edit History}
 %Ndapa: title is too long, so leavig this out
 %\\Mapping Text and Infobox Changes in Wikipedia to \\Learn Verbs and State Changes for Knowledge Base Updates}
 
@@ -82,12 +82,12 @@ Learning State Changing Verbs from Wikipedia Revision History}
 % State changes are viewed as updates of KB facts pertaining to the entities. 
 
 Learning to determine when the facts of a Knowledge Base (KB) have to be updated is a challenging task.
-We propose to learn state changing verbs from Wikipedia revision history. When a state-changing even,  such as a marriage or death,  happens to an entity, the  infobox on the entity's Wikipedia page may be updated. At the same time, the text the same article may be updated with verbs either being added or deleted to reflect the new state of the real world entity. We use Wikipedia revision history %histories 
+We propose to learn state changing verbs from Wikipedia edit history. When a state-changing event,  such as a marriage or death,  happens to an entity, the  infobox on the entity's Wikipedia page usually gets  updated. At the same time, the  article text may be updated with verbs either being added or deleted to reflect the changes made to the infobox. We use Wikipedia edit history %histories 
 to distantly supervise a method for automatically learning verbs and state changes. Additionally, our method uses %fact-specific 
 constraints
  %such as mutually exclusivisity vs. simultaneous changes of infobox slots
-  to effectively map verbs to infobox changes. We observe in our experiments that when state-changing verbs are  added or deleted from an entity's Wikipedia  page text, we can update the entity's infobox with 88\% precision and 76\% recall.
-One immediate  application of our verbs is to incorporate as triggers in methods for   updating existing KBs, which are currently mostly static.
+  to effectively map verbs to infobox changes. We observe in our experiments that when state-changing verbs are  added or deleted from an entity's Wikipedia  page text, we can update the entity's infobox updates with 88\% precision and 76\% recall.
+One compelling  application of our verbs is to incorporate them as triggers in methods for   updating existing KBs, which are currently mostly static.
 
 \end{abstract}
 \input{sections/intro}
