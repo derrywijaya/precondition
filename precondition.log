@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  14 JUN 2015 16:26
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  14 JUN 2015 16:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -393,33 +393,8 @@ Overfull \hbox (1.4929pt too wide) in paragraph at lines 34--91
  []
 
 ) (./sections/related.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--16
-\OT1/ptm/b/n/10.95 Learning from Wikipedia Edit His-tory.
- []
-
-
-Underfull \hbox (badness 3029) in paragraph at lines 3--16
-\OT1/ptm/m/n/10.95 num-ber of lan-guage un-der-stand-ing prob-lems.
- []
-
-
-Underfull \hbox (badness 5050) in paragraph at lines 3--16
-\OT1/ptm/m/n/10.95 Prior meth-ods tar-get var-i-ous tasks dif-fer-ent
- []
-
-
-Underfull \hbox (badness 2875) in paragraph at lines 3--16
-\OT1/ptm/m/n/10.95 from ours. A pop-u-lar task in this re-gard
- []
-
-
-Underfull \hbox (badness 2626) in paragraph at lines 3--16
-\OT1/ptm/m/n/10.95 is that of Wikipedia edit his-tory cat-e-go-riza-
- []
-
-
-Underfull \hbox (badness 1655) in paragraph at lines 3--16
-\OT1/ptm/m/n/10.95 tual en-tail-ment (Nelken and Ya-mangil, 2008;
+Underfull \hbox (badness 1571) in paragraph at lines 3--16
+\OT1/ptm/b/n/10.95 Learning from Wikipedia Re-vi-sion His-tory.
  []
 
 ) (./sections/conclusion.tex) (./precondition.bbl [4 <./figures/result.pdf>]
@@ -480,7 +455,7 @@ xlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012
 /texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on precondition.pdf (5 pages, 487692 bytes).
+Output written on precondition.pdf (5 pages, 487594 bytes).
 PDF statistics:
  200 PDF objects out of 1000 (max. 8388607)
  135 compressed objects within 2 object streams
