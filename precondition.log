@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  14 JUN 2015 15:56
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  14 JUN 2015 16:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -371,12 +371,12 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
 
-Underfull \hbox (badness 5711) in paragraph at lines 43--44
+Underfull \hbox (badness 5711) in paragraph at lines 49--50
 []\OT1/ptm/m/n/10.95 We ob-tain la-bel mem-ber-ship prob-a-bil-i-ties
  []
 
 
-Overfull \hbox (50.43816pt too wide) detected at line 57
+Overfull \hbox (50.43816pt too wide) detected at line 63
 [] []
  []
 
@@ -422,10 +422,7 @@ Underfull \hbox (badness 1655) in paragraph at lines 3--16
 \OT1/ptm/m/n/10.95 tual en-tail-ment (Nelken and Ya-mangil, 2008;
  []
 
-) (./sections/conclusion.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4 <./figures/result.pdf>]) (./precondition.bbl
+) (./sections/conclusion.tex) (./precondition.bbl [4 <./figures/result.pdf>]
 Underfull \hbox (badness 2073) in paragraph at lines 15--20
 []\OT1/ptm/m/n/10 Andrew Carl-son, Justin Bet-teridge, Bryan Kisiel,
  []
@@ -457,11 +454,11 @@ Underfull \hbox (badness 2617) in paragraph at lines 110--115
 Here is how much of TeX's memory you used:
  3045 strings out of 493488
  40876 string characters out of 3141326
- 106675 words of memory out of 3000000
+ 107679 words of memory out of 3000000
  6225 multiletter control sequences out of 15000+200000
  47814 words of font info for 101 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,11n,24p,1407b,287s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,11n,24p,1408b,287s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips
 /base/8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmex10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cme
@@ -483,7 +480,7 @@ xlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012
 /texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on precondition.pdf (5 pages, 488174 bytes).
+Output written on precondition.pdf (5 pages, 487692 bytes).
 PDF statistics:
  200 PDF objects out of 1000 (max. 8388607)
  135 compressed objects within 2 object streams
