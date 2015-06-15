@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 JUN 2015 04:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  15 JUN 2015 09:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -350,22 +350,27 @@ Underfull \hbox (badness 1521) in paragraph at lines 16--17
  []
 
 [2 <./figures/motivation.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 23.
+Underfull \hbox (badness 2443) in paragraph at lines 18--19
+\OT1/ptm/m/n/10.95 of all doc-u-ments $\OML/cmm/m/it/10.95 d[]$\OT1/ptm/m/n/10.
+95 , $\OMS/cmsy/m/n/10.95 8\OML/cmm/m/it/10.95 t[] \OMS/cmsy/m/n/10.95 2 \OML/c
+mm/m/it/10.95 T[];  t[] \OMS/cmsy/m/n/10.95 2
+ []
 
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 25.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 23.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 
-Underfull \hbox (badness 5711) in paragraph at lines 43--44
+Underfull \hbox (badness 5711) in paragraph at lines 45--46
 []\OT1/ptm/m/n/10.95 We ob-tain la-bel mem-ber-ship prob-a-bil-i-ties
  []
 
 
-Overfull \hbox (50.43816pt too wide) detected at line 57
+Overfull \hbox (50.43816pt too wide) detected at line 59
 [] []
  []
 
@@ -374,10 +379,10 @@ Overfull \hbox (50.43816pt too wide) detected at line 57
 File: figures/result.pdf Graphic file (type pdf)
 
 <use figures/result.pdf>
-Package pdftex.def Info: figures/result.pdf used on input line 26.
+Package pdftex.def Info: figures/result.pdf used on input line 27.
 (pdftex.def)             Requested size: 142.26378pt x 109.5228pt.
 
-Overfull \hbox (1.4929pt too wide) in paragraph at lines 34--91
+Overfull \hbox (1.4929pt too wide) in paragraph at lines 35--92
  [] 
  []
 
@@ -443,11 +448,11 @@ Underfull \hbox (badness 2617) in paragraph at lines 110--115
 Here is how much of TeX's memory you used:
  3048 strings out of 493315
  40946 string characters out of 6137904
- 111338 words of memory out of 5000000
+ 109338 words of memory out of 5000000
  6374 multiletter control sequences out of 15000+600000
  46185 words of font info for 99 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,11n,26p,1407b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,11n,26p,1408b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips
 /base/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmex10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cme
@@ -469,7 +474,7 @@ xlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013
 /texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2013/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on precondition.pdf (5 pages, 486345 bytes).
+Output written on precondition.pdf (5 pages, 486272 bytes).
 PDF statistics:
  200 PDF objects out of 1000 (max. 8388607)
  135 compressed objects within 2 object streams

@@ -1,6 +1,6 @@
 \section{Experiments}
 
-We use 90\% of our labeled documents as train and test on the remaining 10\%. Since our data is noisy, we manually go through our test data to discard documents that have incorrect label to the change in its text. The task is to predict for each document, the label of the document given its verbs features. We compute precision, recall, and F1 values of our predictions of the test set and compare the values before and after feature selection (Figure \ref{fig:result}).
+We use 90\% of our labeled documents as train and test on the remaining 10\%. Since our data is noisy, we manually go through our test data to discard documents that have incorrect label to the change in its text. The task is to predict for each document, the label of the document given its verbs features. We compute precision, recall, and F1 values of our predictions of the test set and compare the values before and after feature selection (Fig. \ref{fig:result}).
 
 %\begin{table}
 %\begin{small}
@@ -19,7 +19,8 @@ We use 90\% of our labeled documents as train and test on the remaining 10\%. Si
 %\end{small}
 %\end{table}
 
-We observe the value of doing feature selection by asserting constraints in an MIP formulation in Figure \ref{fig:result}. Feature selection improves precision without reducing too much recall; thus resulting in a better F1. Some inconsistent verb features for the labels were removed by asserting constraints. For example, before feature selection, the verbs: ``marry", ``marry in" and ``be married to" were high-weighted features for both \textit{begin-spouse} and \textit{end-spouse}. After asserting constraints that \textit{begin-spouse} is mutex with \textit{end-spouse}, these verbs (whose base form is ``marry") are filtered out from the features of \textit{end-spouse}. We show some of the learned verb features (after feature selection) for some state change labels in (Table \ref{table:verbs}).
+We observe the value of doing feature selection by asserting constraints in an MIP formulation% in Figure \ref{fig:result}
+. Feature selection improves precision without reducing too much recall; thus resulting in a better F1 (Fig. \ref{fig:result}). Some inconsistent verb features for the labels were removed by asserting constraints. For example, before feature selection, the verbs: ``marry" and ``be married to" were high-weighted features for both \textit{begin-spouse} and \textit{end-spouse}. After asserting constraints that \textit{begin-spouse} is mutex with \textit{end-spouse}, these verbs (whose base form is ``marry") are filtered out from the features of \textit{end-spouse}. We show some of the learned verb features (after feature selection) for some state change labels in (Table \ref{table:verbs}).
 
 \begin{figure}
 \begin{center}
@@ -28,7 +29,7 @@ We observe the value of doing feature selection by asserting constraints in an M
 \end{center}
 \end{figure}
 
-\begin{table}
+\begin{table}[t]
 \begin{scriptsize}
 \begin{center}
 \begin{tabular}{|l|l|}
@@ -72,9 +73,9 @@ Label & Verb \\
 %\hline
 %\textit{begin-party} &+(arg1) launch (arg2), +(arg1) be elected as (arg2), +(arg1) be elected (arg2) \\
 %\hline
-\textit{begin-} &+(arg1) graduate from (arg2), +(arg1) attend (arg2), \\
-\textit{almamater}& +(arg1) be educated at (arg2) \\
-\hline
+%\textit{begin-} &+(arg1) graduate from (arg2), +(arg1) attend (arg2), \\
+%\textit{almamater}& +(arg1) be educated at (arg2) \\
+%\hline
 %\textit{begin-awards} &+(arg1) be awarded (arg2), +(arg1) be named on (arg2), \\
 %& +(arg1) receive (arg2) \\
 %\hline
