@@ -2,7 +2,7 @@
 
 \subsection{Data Construction} \label{sec:data}
 %Ndapa: histroy is generally singular, 
-We construct a dataset from Wikipedia revision history of person entities whose facts change between the year 2007 and 2012 (i.e., have at least one fact in YAGO KB \cite{suchanek2007yago} with a start or end time in this period). We obtain Wikipedia URLs of this set of entities $P$ from YAGO and crawl their revision history%, obtaining any revision their pages have between the year 2007 and 2012
+We construct a dataset from Wikipedia edit history of person entities whose facts change between the year 2007 and 2012 (i.e., have at least one fact in YAGO KB \cite{suchanek2007yago} with a start or end time in this period). We obtain Wikipedia URLs of this set of entities $P$ from YAGO and crawl their article's revision history%, obtaining any revision their pages have between the year 2007 and 2012
 . Given a person $p$, his Wikipedia revision history $R_p$ has a set of ordered dates $T_p$ on which revisions are made to his Wikipedia page (we consider date granularity). Each revision $r_{p, t_p} \in R_p$ is his Wikipedia page at date $t_p$ where $t_p \in T_p$. 
 
 A document $d_{p, t_p}$ in our data set is the \textit{difference}\footnote{a HTML document obtained by ``compare selected revisions"  functionality in Wikipedia} between any two consecutive revisions separated by at least a single date i.e., $d_{p, t_p} = r_{p, t_p+2} - r_{p, t_p}$. Where $r_{p, t_p+2}$ is the \textit{first} revision on date $t_p+2$ and $r_{p, {t_p}}$ is the \textit{last} revision on date $t_p$ (as a page can be revised many times in a day). 
@@ -22,7 +22,7 @@ The dataset that we make available consists of all documents $d_{p, t_p}$, $\for
 %We define an infobox attribute of an entity e.g., \textsc{spouse} to \textit{begin} when a new value or a begin time is added to the attribute slot and to \textit{end} when an end time is being added to the slot. Using regular expression to detect whether a new value, a start, or an end time is being added to infobox slots of a document, we automatically label each document with ``begin-\{attribute\_name\}" or ``end-\{attribute\_name\}". So a document that contains an addition of a new value in the \textsc{spouse} slot will be labeled ``begin-spouse", while a document that contains an addition of end time in the \textsc{spouse} slot will be labeled ``end-spouse". 
 
 \subsection{Model}
-We use a Maximum Entropy (\textsc{MaxEnt}) classifier given the set of training data = \{(\textbf{v}$_{d_{\ell}}$, y)\} where \textbf{v}$_{d_{\ell}} =$ ($v_1$, $v_2$, ... $v_{|V|}$) $\in R^{|V|}$ is the $|V|$-dimensional representation of a labeled document $d_{\ell}$ where $V$ is the set of all verbs in our training data, and $y$ is the label of $d_{\ell}$ as defined in \ref{sec:data}.
+We use a Maximum Entropy (\textsc{MaxEnt}) classifier given a set of training data = \{(\textbf{v}$_{d_{\ell}}$, y)\} where \textbf{v}$_{d_{\ell}} =$ ($v_1$, $v_2$, ... $v_{|V|}$) $\in R^{|V|}$ is the $|V|$-dimensional representation of a labeled document $d_{\ell}$ where $V$ is the set of all verbs in our training data, and $y$ is the label of $d_{\ell}$ as defined in \ref{sec:data}.
 
 These training documents are used to estimate a set of weight vectors \textbf{w} = \{\textbf{w}$_1$, \textbf{w}$_2$, ... \textbf{w}$_{|Y|}$\}, one for each label $y \in Y$, the set of all labels in our training data. The classifier can then be applied to classify an unlabeled document $d_{\textit{u}}$ using: 
 \scriptsize
@@ -32,19 +32,33 @@ These training documents are used to estimate a set of weight vectors \textbf{w}
 \normalsize
 \subsection{Feature Selection using Constraints}
 
-While feature weights obtained by \textsc{MaxEnt} allow us to identify verbs that are good features for predicting a particular state change label, our distantly supervised training data is inherently noisy. %There is no guarantee that at any revision, the changed slots are related to the event being expressed in text. 
-For example, when death happens, birth-related information in the infobox may also be updated. This can lead to incorrect state change prediction. While using many distantly labeled data may help%reduce the effect of noise
-, improvements may be possible by leveraging constraints among state changes to select consistent verb features for each change. 
+While feature weights from the \textsc{MaxEnt} model allow us to identify verbs that are good features for predicting a particular state change label, our distantly supervised training data is inherently noisy. Changes to multiple infoboxes can happen within our revision.
+We therefore   utilize constraints among state changes to select consistent verb features for each type of state change. 
+%There is no guarantee that at any revision, the changed slots are related to the event being expressed in text. 
+%For example, when death happens, birth-related information in the infobox may also be updated. This can lead to incorrect state change prediction. While using many distantly labeled data may help%reduce the effect of noise
+%, improvements may be possible by leveraging constraints among state changes to select consistent verb features for each change. 
 
+<<<<<<< HEAD
 The constraints that we use can be categorized into: (1) mutual exclusion (\textit{Mutex}) which indicate that mutex state changes should not \textit{typically} happen at the same time e.g., update on \textit{birthdate} should not \textit{typically} happen with update on \textit{deathcause}. %or that the start of \textit{spouse} is mutually exclusive with the end of \textit{spouse}. 
 A good \textit{base} verb\footnote[3]{The verb root or base form of a verb (after removing preposition)} for one change e.g., ``marry" for \textit{begin-spouse} is therefore not a good feature for \textit{end-spouse} (mutex with \textit{begin-spouse}). (2) Simultaneous (\textit{Sim}) constraints which indicate that simultaneous state changes should \textit{typically} happen at the same time e.g., update on \textit{birthdate} should \textit{typically} happen with other birth-related updates. %on \textit{birthplace}, \textit{birthname}, \textit{birthcity}, etc. 
 A good base verb for one state change e.g., ``die" for \textit{begin-deathdate} is therefore a good feature for \textit{begin-deathdate}'s simultaneous changes: \textit{begin-deathplace}, \textit{begin-deathcause}, etc. We obtain such constraints using heuristics on the label names.%, labels that share the same prefix such as \textit{begin-birth*} have simultaneous constraints while labels that share the same suffix but different prefix such as \textit{begin-spouse} and \textit{end-spouse} or \textit{begin-yearsactive} and \textit{end-yearsactive} have mutually exclusive constraints.
 
 Given a set of constraints, a set of labels $Y$, and a set of base verbs $B$ in our training data, we solves a Mixed-Integer Program (MIP) for each base verb $b \in B$ to estimate whether or not $b$ should be a feature for state change $y \in Y$. 
+=======
+We use two types of constraints:  (1) mutual exclusion (\textit{Mutex}) which indicate that mutex state changes do not happen at the same time 
+e.g., update on \textit{birthdate} should not \textit{typically} happen with update on \textit{deathcause}. Hence,  their state changing verbs should be different. %or that the start of \textit{spouse} is mutually exclusive with the end of \textit{spouse}. 
+%A good \textit{base} verb\footnote{The verb root or base form of a verb} for one change e.g., ``marry" for \textit{begin-spouse} is therefore not a good feature for \textit{end-spouse} (mutex with \textit{begin-spouse}). 
+(2) Simultaneous (\textit{Sim}) constraints which indicate that simultaneous state changes should \textit{typically} happen at the same time e.g., update on \textit{birthdate} should \textit{typically} happen with other birth-related updates. %on \textit{birthplace}, \textit{birthname}, \textit{birthcity}, etc. 
+%A good base verb for one state change e.g., ``die" for \textit{begin-deathdate} is therefore a good feature for \textit{begin-deathdate}'s simultaneous changes: \textit{begin-deathplace}, \textit{begin-deathcause}, etc. 
+We manually specified these two types  of  constraints to all pairs infoboxes where they apply.. 
+%Labels that share the same prefix such as \textit{begin-birth*} have simultaneous constraints while labels that share the same suffix but different prefix such as \textit{begin-spouse} and \textit{end-spouse} or \textit{begin-yearsactive} and \textit{end-yearsactive} have mutually exclusive constraints.
+
+Given a set of constraints, a set of labels $Y$, and a set of base verbs\footnote{The verb root or base form of a verb} $B$ in our training data, we solve a Mixed-Integer Program (MIP) for each base verb $b \in B$ to estimate whether $b$ should be a feature for state change $y \in Y$. 
+>>>>>>> upstream/master
 
 We obtain label membership probabilities \{$P(y | b) = count(y, b) / \sum_{y'} count(y', b) $\} from our training data. The MIP takes the scores $P(y | b)$ and constraints as input and produces a bit vector of labels \textbf{a}$_{b}$ as output, each bit  $a_{b}^{y} \in \{0,\ 1\}$ represents whether or not $b$ should be a feature for $y$.
 
-The MIP formulation for a base verb $b$ is presented in Equation \ref{eqn:mip}. For each $b$, this method tries to maximize the sum of scores of selected labels, after penalizing for violation of label constraints. Let $\zeta_{y, y'}$ be slack variables for \textit{Sim} constraints, and $\xi_{y, y'}$ be slack variables for \textit{Mutex} constraints. 
+The MIP formulation for a base verb $b$ is presented by Equation \ref{eqn:mip}. For each $b$, this method tries to maximize the sum of scores of selected labels, after penalizing for violation of label constraints. Let $\zeta_{y, y'}$ be slack variables for \textit{Sim} constraints, and $\xi_{y, y'}$ be slack variables for \textit{Mutex} constraints. 
 
 \scriptsize
 \begin{equation}
@@ -59,6 +73,10 @@ The MIP formulation for a base verb $b$ is presented in Equation \ref{eqn:mip}. 
 \end{equation}
 \normalsize
 
+<<<<<<< HEAD
 Solving MIP per base verb is fast. To make it even more efficient, we reduce the number of labels considered per base verb i.e., we only consider a label $y$ to be a candidate for $b$ if $\exists\ v_i \in V$ s.t. $w_y^i > 0$ and $b$ = base form of $v_i$. %Then, we need to only solve MIP for base verbs that have non-empty candidate labels. 
+=======
+Solving MIP per base verb is fast; we reduce the number of labels considered per base verb i.e., we only consider a label $y$ to be a candidate for $b$ if $\exists\ v_i \in V$ s.t. $w_y^i > 0$ and $b$ = base form of $v_i$ (after removing preposition). Then, we need to only solve MIP for base verbs that have non-empty candidate labels. 
+>>>>>>> upstream/master
 
 After we output \textbf{a}$_b$ for each $b$, we select features for each label. We only select a verb $v_i$ to be a feature for $y$ if the learned weight $w_y^i > 0$ and $a_b^{y} = 1$, where $b$ = the base form of $v_i$. Essentially for each label, we select verb features that have positive weights and are consistent for the label.
