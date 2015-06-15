@@ -1,10 +1,6 @@
 \section{Experiments}
 
-<<<<<<< HEAD
-We use 90\% of our labeled documents as train and test on the remaining 10\%. Since our data is noisy, we manually go through our test data to discard documents that have incorrect label to the change in its text. The task is to predict for each document, the label of the document given its verbs features. We compute precision, recall, and F1 values of our predictions of the test set and compare the values before and after feature selection (Fig. \ref{fig:result}).
-=======
-We use 90\% of our labeled documents as train and test on the remaining 10\%. Since revision history data is noisy, we manually go through our test data to discard documents that have incorrect infobox  labels by looking the  text that  changed. The task is to predict for each document (revision), the label (infobox slot value) of the document given its verbs features. We compute precision, recall, and F1 values of our predictions  and compare the values before and after feature selection (Figure \ref{fig:result}).
->>>>>>> upstream/master
+We use 90\% of our labeled documents as train and test on the remaining 10\%. Since revision history data is noisy, we manually go through our test data to discard documents that have incorrect infobox  labels by looking the  text that  changed. The task is to predict for each document (revision), the label (infobox slot change) of the document given its verbs features. We compute precision, recall, and F1 values of our predictions  and compare the values before and after feature selection (Fig. \ref{fig:result}).
 
 %\begin{table}
 %\begin{small}
@@ -23,12 +19,7 @@ We use 90\% of our labeled documents as train and test on the remaining 10\%. Si
 %\end{small}
 %\end{table}
 
-<<<<<<< HEAD
-We observe the value of doing feature selection by asserting constraints in an MIP formulation% in Figure \ref{fig:result}
-. Feature selection improves precision without reducing too much recall; thus resulting in a better F1 (Fig. \ref{fig:result}). Some inconsistent verb features for the labels were removed by asserting constraints. For example, before feature selection, the verbs: ``marry" and ``be married to" were high-weighted features for both \textit{begin-spouse} and \textit{end-spouse}. After asserting constraints that \textit{begin-spouse} is mutex with \textit{end-spouse}, these verbs (whose base form is ``marry") are filtered out from the features of \textit{end-spouse}. We show some of the learned verb features (after feature selection) for some state change labels in (Table \ref{table:verbs}).
-=======
-We observe the value of doing feature selection by asserting constraints in an MIP formulation in Figure \ref{fig:result}. Feature selection improves precision without significantly reducing  recall; resulting in a better F1. By asserting constraints, some of the  inconsistent verb features for the labels were removed. For example, before feature selection, the verbs: ``marry", ``marry in" and ``be married to" were high-weighted features for both \textit{begin-spouse} and \textit{end-spouse}. After asserting constraints that \textit{begin-spouse} is mutex with \textit{end-spouse}, these verbs (whose base form is ``marry") are filtered out from the features of \textit{end-spouse}. We show some of the learned verb features (after feature selection) for some of the labels in (Table \ref{table:verbs}).
->>>>>>> upstream/master
+We observe the value of doing feature selection by asserting constraints in an MIP formulation in Figure \ref{fig:result}. Feature selection improves precision; resulting in a better F1. By asserting constraints, some of the  inconsistent verb features for the labels were removed. For example, before feature selection, the verbs: ``marry", and ``be married to" were high-weighted features for both \textit{begin-spouse} and \textit{end-spouse}. After asserting constraints that \textit{begin-spouse} is mutex with \textit{end-spouse}, these verbs (whose base form is ``marry") are filtered out from the features of \textit{end-spouse}. We show some of the learned verb features (after feature selection) for some of the labels in (Table \ref{table:verbs}). In average, we learn about 18 verbs per infobox state change in our state changing verb resource. 
 
 \begin{figure}
 \begin{center}
