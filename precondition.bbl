@@ -24,15 +24,6 @@ Timothy Chklovski and Patrick Pantel.
 \newblock Verbocean: Mining the web for fine-grained semantic verb relations.
 \newblock In {\em Proceedings of EMNLP 2004}, pages 33--40.
 
-\bibitem[\protect\citename{Daxenberger and Gurevych}2012]{DaxenbergerG12}
-Johannes Daxenberger and Iryna Gurevych.
-\newblock 2012.
-\newblock A corpus-based study of edit categories in featured and non-featured
-  wikipedia articles.
-\newblock In {\em {COLING} 2012, 24th International Conference on Computational
-  Linguistics, Proceedings of the Conference: Technical Papers, 8-15 December
-  2012, Mumbai, India}, pages 711--726.
-
 \bibitem[\protect\citename{Daxenberger and
   Gurevych}2013]{daxenberger2013automatically}
 Johannes Daxenberger and Iryna Gurevych.
@@ -54,6 +45,15 @@ Mohammad~Javad Hosseini, Hannaneh Hajishirzi, Oren Etzioni, and Nate Kushman.
 \newblock 2014.
 \newblock Learning to solve arithmetic word problems with verb categorization.
 \newblock In {\em EMNLP}, pages 523--533. ACL.
+
+\bibitem[\protect\citename{Manning \bgroup et al.\egroup
+  }2014]{manning-EtAl:2014:P14-5}
+Christopher~D. Manning, Mihai Surdeanu, John Bauer, Jenny Finkel, Steven~J.
+  Bethard, and David McClosky.
+\newblock 2014.
+\newblock The {Stanford} {CoreNLP} natural language processing toolkit.
+\newblock In {\em Proceedings of 52nd Annual Meeting of the Association for
+  Computational Linguistics: System Demonstrations}, pages 55--60.
 
 \bibitem[\protect\citename{Mitchell \bgroup et al.\egroup
   }2015]{MitchellCHTBCMG15}

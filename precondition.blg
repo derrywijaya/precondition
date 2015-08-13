@@ -1,41 +1,41 @@
-This is BibTeX, Version 0.99d (TeX Live 2012)
+This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: precondition.aux
 The style file: acl.bst
 Database file #1: precondition.bib
 You've used 15 entries,
             2490 wiz_defined-function locations,
-            639 strings with 8238 characters,
-and the built_in function-call counts, 7937 in all, are:
-= -- 808
-> -- 375
+            639 strings with 8257 characters,
+and the built_in function-call counts, 8021 in all, are:
+= -- 811
+> -- 395
 < -- 11
-+ -- 134
-- -- 132
-* -- 564
-:= -- 1195
++ -- 142
+- -- 140
+* -- 578
+:= -- 1216
 add.period$ -- 63
 call.type$ -- 15
-change.case$ -- 126
+change.case$ -- 130
 chr.to.int$ -- 14
 cite$ -- 15
-duplicate$ -- 342
-empty$ -- 591
-format.name$ -- 153
-if$ -- 1733
+duplicate$ -- 340
+empty$ -- 588
+format.name$ -- 160
+if$ -- 1743
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 13
 newline$ -- 91
 num.names$ -- 45
-pop$ -- 177
+pop$ -- 181
 preamble$ -- 1
-purify$ -- 141
+purify$ -- 145
 quote$ -- 0
-skip$ -- 286
+skip$ -- 282
 stack$ -- 0
-substring$ -- 366
-swap$ -- 130
+substring$ -- 358
+swap$ -- 128
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0

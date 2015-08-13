@@ -1,0 +1,41 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf190
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker (\{decimal\})}{\leveltext\leveltemplateid1\'03(\'00);}{\levelnumbers\'02;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww12380\viewh10760\viewkind0
+\deftab720
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+Reviewer #1\
+\
+*Baselines: To the best of our knowledge, the task that we propose to solve in this paper: learn state-changing verbs in terms of the states defined in existing knowledge bases is novel. The idea of using Wikipedia edit histories is also novel. There is not yet any previous approach to compare with; therefore we have compared the structured prediction using mixed-integer program (MIP) with the (baseline) multi-class logistic regression prediction without MIP. On top of that, as suggested, we can add a majority class baseline in the final version of the paper.\
+\
+*Presentation: We can improve the clarity of the presentation by simplifying the notations as suggested and accompany them with words that provide an intuitive description of the notation whenever possible. \
+\
+*Sec. 2.1: We use dependency parse of sentences to extract subjects and objects of verbs.\
+\
+*Sec. 2.2.: Yes. \
+\
+*Sec. 2.3: Birth related updates include \'93birthdate\'94, \'93birthplace\'94, \'93birthname\'94, etc. We have 10 mutex constraints and 23 simultaneously updated constraints.  \
+ \
+*Sec 2.3: We use MALLET default implementation of MaxEnt model that uses L2 regularization in the form of Gaussian priors on weights, which does not encourage feature selection so may not have reduced the number of verbs per state-change label as MIP does. We can experiment with L1 regularization to see if that helps (can be another baseline for evaluation).  \
+\
+Reviewer #2\
+\pard\tx20\tx412\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\li392\fi-393
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	(1)	}\expnd0\expndtw0\kerning0
+Each document in our data set consists of a state-change label (begin-birthplace, end-occupation, begin-spouse, etc) and the text edits that accompany it. The task is given the text edits of a document, predict its state-change label. The prediction is hence agnostic to the entity or the frequency of state-change events happening to the entity over time. Each event separately creates a new document with a label and an accompanying text edits. The frequency of state-change events only affect the number of documents available per state-change label (e.g., begin-birthdate is the largest class - since all persons in Wikipedia are born sometime). \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	(2)	}\expnd0\expndtw0\kerning0
+Since we only use deletions that involve verbs with two arguments (one of which is the main entity of the Wikipedia page and the other is the value of the infobox that changes), we can get rid of some noisy deletions that are unrelated to the state change. Since deletions imply things that happen before the state-change, we can adapt deletions to plain text by assuming for example, that sentences in the text follow temporal order. To replicate deletions, we can take all sentences before the verb of interest in the text as candidate deletions and all sentences after the verb as candidate additions. This is one idea to explore.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	(3)	}\expnd0\expndtw0\kerning0
+(a) We obtain entities from YAGO KB that have some facts changed between 2007 and 2012, meaning that the facts must have their temporal information (have non-empty occursSince and occursUntil values in YAGO). One reason we may have obtained only 16,909 persons this way can be because these temporal information in YAGO maybe incomplete.\uc0\u8232 (b) There are 37 KB states evaluated, the list of which is part of the resource we submitted with the paper.\u8232 (c) We do not purposely construct negative examples, we have labeled examples for each class and perform one vs. all classification over these multi-class examples. In the future we can construct negative examples for each state-change class using documents that contain similar text edits as the positive documents but which do not contain similar state-change in their infoboxes.\u8232 (d) The split is by documents. It is true that entity split may be preferable. We can do extra experiments on that. \u8232 (e) Because our task is to predict infobox change using verbs (to build a state-changing verbs resource) and because we use supervised approach, we can only use documents that contain both infobox change and verbs with two arguments (the entity and the value of the change) in the text edits. There are only ~10,000 distantly-labeled documents that we can use for training and testing. We only have to go through ~1000 documents, which is manageable. The ~200,000 documents that we release will contain all edit histories without this filtering. This resource maybe useful for (1) semi-supervised learning of this task, (2) for constructing negative examples as in (c), or (3) for approaches that use more features than just verbs.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+Reviewer #3:\
+\
+*More features: We agree that adding more features may improve performance. Our focus in this paper is to build state-changing verbs resource, however we would like to experiment further with language features other than verbs. One direction in mind is to use also adjectives (instead of just verbs). Deletions of adjectives such as \'93single\'94 or \'93engaged\'94 in text maybe predictive of state-change \'93begin-spouse\'94. Additions of adjectives such as \'93married\'94 in text maybe predictive of state-change \'93begin-spouse\'94.\
+\
+*We can adapt deletions and additions in Wikipedia to news documents, for example by using the time stamps of news we can simulate Wikipedia edit histories, using news before the date of the state-change event of interest as candidate deletions associated with the state-change and using news after the date of the state-change as candidate additions. }
