@@ -20,7 +20,7 @@ In particular,  our approach has the following advantages: (1) Consider for exam
 % \textit{marry} signals the start while \textit{divorce} signals the end of the \textsc{spouse} relation; 
 Thus,  we can update the entity's fact \textit{and} its temporal scope \cite{wijayactp}. (2) Learning state changing verbs
  %  about by verbs 
-   can pave ways for learning the ordering of verbs in terms of their  pre- and post-conditions.
+   can pave the way for learning the ordering of verbs in terms of their  pre- and post-conditions.
    
    % %Ndapa:
   % I think we are being too speculative here. This was fine in a vision paper such as AKBC but here
@@ -30,7 +30,7 @@ Thus,  we can update the entity's fact \textit{and} its temporal scope \cite{wij
 %as a collection of verbs chained together by pre- and post-condition of their shared entities, (b) for inferring cascading effect of an event via the pre- and post-condition of shared entities in an event sequence, or (c) for inferring unknown states of entities from the verbs they participate in.  
 
 Our approach learns state changing verbs from Wikipedia revision history. In particular, we seek to establish a correspondence between infobox edits and verbs edits in the same article. The infobox of a  Wikipedia article is  a structured box that summarizes an entity as a set of facts (attribute-value pairs) . Our assumption is that when a state-changing event happens to an entity e.g., a marriage, its Wikipedia infobox is  updated by adding a new \textsc{spouse} value. 
-At approximately the same time, the article text  might be updated with verbs that express the event, e.g., \textit{X is now \textbf{married} to Y}.  Figure \ref{fig:motivation} is an example of an infobox of entity changing at the same time as the article's main text to reflect an marriage event.
+At approximately the same time, the article text  might be updated with verbs that express the event, e.g., \textit{X is now \textbf{married} to Y}.  Figure \ref{fig:motivation} is an example of an infobox of an entity changing at the same time as the article's main text to reflect a marriage event.
 
 Wikipedia revision history of many articles can act as distant supervision  data for learning the correspondence between text and infobox changes. However, these revisions are very  \textit{noisy}.  Many infobox slots can be  updated when a single event happens.
 %there is no guarantee that only the infobox slots related to a particular event will be updated. 
@@ -39,7 +39,9 @@ Therefore, our method has to handle these sources of noise.  We leverage logical
 % e.g., that the start of \textit{deathdate} is mutually exclusive from the \textit{birthdate} or that the start of \textit{birthdate} is simultaneous with the start of \textit{birthplace}.
 %to effectively learn infobox changes that relate to a particular event-expressing verb. 
 
-In summary, our contributions are as follows: (1) We  extracted a  distantly labeled dataset from Wikipedia revision history targeted for the task of  learning verbs that cause  infobox updates, which we showed to be effective for learning state changing verbs.  (2) We developed a method for learning state changing verbs from Wikipedia revision history.
-(3) A resource that contains state changing verbs, which we make available for future research in our webpage\footnote{http://www.cs.cmu.edu/~dwijaya/postcondition.html}. We also make the revision history dataset available in the webpage.
+In summary, our contributions are as follows: (1) we present an algorithm that uses Wikipedia edit histories as distantly labeled data to learn which verbs result in which state changes to entities, and experimentally demonstrate its success, (2) we make available this set of distantly labeled training data on our website\footnote{http://www.cs.cmu.edu/~dwijaya/postcondition.html}, and (3) we also make available our learned mappings from verbs to state changes, as a resource for other researchers, on the same website. 
+
+%In summary, our contributions are as follows: (1) We  extracted a  distantly labeled dataset from Wikipedia revision history targeted for the task of  learning verbs that cause  infobox updates, which we showed to be effective for learning state changing verbs.  (2) We developed a method for learning state changing verbs from Wikipedia revision history.
+%(3) A resource that contains state changing verbs, which we make available for future research in our webpage\footnote{http://www.cs.cmu.edu/~dwijaya/postcondition.html}. We also make the revision history dataset available in the webpage.
 
 % learned resource of verbs that is effective for identifying state changes\footnote[1]{We make our dataset and verbs resource available here: http://.../verbs.html}.

@@ -7,7 +7,7 @@
 \end{center}
 \end{figure}
 
-We use 90\% of our labeled documents that have verb edits as features (section \ref{sec:data}) as train and test on the remaining 10\%. Since revision history data is noisy, we manually go through our test data to discard documents that have incorrect infobox  labels by looking the  text that  changed. The task is to predict for each document (revision), the label (infobox slot change) of the document given its verbs features. We compute precision, recall, and F1 values of our predictions  and compare the values before and after feature selection (Fig. \ref{fig:result}).
+We use 90\% of our labeled documents that have verb edits as features (section \ref{sec:data}) as training data and test on the remaining 10\%. Since revision history data is noisy, we manually go through our test data to discard documents that have incorrect infobox  labels by looking the  text that  changed. The task is to predict for each document (revision), the label (infobox slot change) of the document given its verbs features. We compute precision, recall, and F1 values of our predictions  and compare the values before and after feature selection (Fig. \ref{fig:result}).
 
 %\begin{table}
 %\begin{small}
@@ -92,8 +92,7 @@ Label & Verb \\
 %\textit{nationalteam}& +(arg1) make debut for (arg2), +(arg1) play for (arg2) \\
 %\hline
 \end{tabular}
-\caption{\label{table:verbs} Comparison of verb phrases learned before and after feature selection for various labels (infobox types).}
-% The texts in bold are (prep+) noun that occur most frequently with the combination of the (verb, label) in the train data.}
+\caption{\label{table:verbs} Comparison of verb phrases learned before and after feature selection for various labels (infobox types). The texts in bold are (preposition+) noun that occur most frequently with the $\langle$verb phrase, label$\rangle$ pair in the training data.}
 \end{center}
 \end{scriptsize}
 \end{table}

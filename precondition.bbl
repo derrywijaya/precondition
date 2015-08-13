@@ -101,8 +101,8 @@ Fabian~M Suchanek, Gjergji Kasneci, and Gerhard Weikum.
 \bibitem[\protect\citename{Wijaya \bgroup et al.\egroup }2014a]{wijayactp}
 Derry Wijaya, Ndapa Nakashole, and Tom Mitchell.
 \newblock 2014a.
-\newblock Ctps: Contextual temporal profiles for time scoping facts via entity
-  state change detection.
+\newblock {CTPs}: Contextual temporal profiles for time scoping facts via
+  entity state change detection.
 \newblock In {\em Proceedings of the Conference on Empirical Methods in Natural
   Language Processing}. Association for Computational Linguistics.
 
